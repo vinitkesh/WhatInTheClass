@@ -73,4 +73,69 @@ Deciding on JSON and objects structure:
     3. Duration
     4. Level of rev(1 to 10)
 
+3. Courses List (Only those saved by User)
+    1. Name of course
+4. 
+
+
+example of data : 
+
+```json
+{
+  "classes": {
+    "2024-05-26T14:15:22Z": {
+      "timestamp": "2024-05-26T14:15:22Z",
+      "duration": 90,
+      "topic": "Introduction to JavaScript",
+      "tags": ["JavaScript", "Programming", "Basics"],
+      "course": "Web Development 101",
+      "brief_description": "An introduction to JavaScript covering basic syntax, variables, and data types.",
+      "revision_list": [
+        "2024-05-28T10:00:00Z",
+        "2024-05-30T15:30:00Z"
+      ]
+    },
+    "2024-05-27T09:00:00Z": {
+      "timestamp": "2024-05-27T09:00:00Z",
+      "duration": 120,
+      "topic": "Advanced CSS",
+      "tags": ["CSS", "Web Design", "Advanced"],
+      "course": "Web Development 101",
+      "brief_description": "Advanced concepts in CSS, including Flexbox, Grid, and responsive design.",
+      "revision_list": [
+        "2024-05-29T11:00:00Z",
+        "2024-06-01T14:00:00Z"
+      ]
+    }
+  },
+  "revisions": {
+    "2024-05-28T10:00:00Z": {
+      "class_timestamp": "2024-05-26T14:15:22Z",
+      "revision_timestamp": "2024-05-28T10:00:00Z",
+      "duration": 60,
+      "level_of_rev": 5
+    },
+    "2024-05-30T15:30:00Z": {
+      "class_timestamp": "2024-05-26T14:15:22Z",
+      "revision_timestamp": "2024-05-30T15:30:00Z",
+      "duration": 45,
+      "level_of_rev": 7
+    },
+    "2024-05-29T11:00:00Z": {
+      "class_timestamp": "2024-05-27T09:00:00Z",
+      "revision_timestamp": "2024-05-29T11:00:00Z",
+      "duration": 60,
+      "level_of_rev": 6
+    },
+    "2024-06-01T14:00:00Z": {
+      "class_timestamp": "2024-05-27T09:00:00Z",
+      "revision_timestamp": "2024-06-01T14:00:00Z",
+      "duration": 75,
+      "level_of_rev": 8
+    }
+  }
+}
+
+```
+
 
